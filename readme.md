@@ -108,7 +108,7 @@ _Sử dụng Postman hoặc phần mềm chức năng tương tự để gọi A
   ```json
   {
     "status": "error",
-    "status": 400,
+    "code": 400,
     "message": "Todo already exists"
   }
   ```
@@ -170,7 +170,7 @@ _Sử dụng Postman hoặc phần mềm chức năng tương tự để gọi A
   ```json
   {
     "status": "error",
-    "status": 404,
+    "code": 404,
     "message": "Todo not found"
   }
   ```
@@ -211,7 +211,7 @@ _Sử dụng Postman hoặc phần mềm chức năng tương tự để gọi A
   ```json
   {
     "status": "error",
-    "status": 404,
+    "code": 404,
     "message": "Todo not found"
   }
   ```
@@ -242,7 +242,7 @@ _Sử dụng Postman hoặc phần mềm chức năng tương tự để gọi A
   ```json
   {
     "status": "error",
-    "status": 404,
+    "code": 404,
     "message": "Something wrong - To do not found or already deleted"
   }
   ```
