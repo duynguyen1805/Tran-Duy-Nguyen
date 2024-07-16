@@ -118,6 +118,7 @@ _Sử dụng Postman hoặc phần mềm chức năng tương tự để gọi A
 - **URL:** `/v1/api/todo/get-list`
 - **Method:** `GET`
 - **Success Response example**
+
   ```json
   {
     "message": "Get Todo list successfully",
@@ -143,11 +144,12 @@ _Sử dụng Postman hoặc phần mềm chức năng tương tự để gọi A
   }
   ```
 
-### Get Todo by ID
+  ### Get Todo by ID
 
 - **URL:** `/v1/api/todo/get-by-id/:id`
 - **Method:** `GET`
 - **Success Response example**
+
   ```json
   {
     "message": "Get Todo by id successfully",
@@ -162,7 +164,9 @@ _Sử dụng Postman hoặc phần mềm chức năng tương tự để gọi A
     }
   }
   ```
+
   - **Error Response example**
+
   ```json
   {
     "status": "error",
@@ -171,7 +175,7 @@ _Sử dụng Postman hoặc phần mềm chức năng tương tự để gọi A
   }
   ```
 
-### Update Todo by ID
+  ### Update Todo by ID
 
 - **URL:** `/v1/api/todo/update/:id`
 - **Method:** `PUT`
@@ -186,6 +190,7 @@ _Sử dụng Postman hoặc phần mềm chức năng tương tự để gọi A
   }
   ```
 - **Success Response example**
+
   ```json
   {
     "message": "Todo updated successfully",
@@ -200,7 +205,9 @@ _Sử dụng Postman hoặc phần mềm chức năng tương tự để gọi A
     }
   }
   ```
+
   - **Error Response example**
+
   ```json
   {
     "status": "error",
@@ -209,7 +216,7 @@ _Sử dụng Postman hoặc phần mềm chức năng tương tự để gọi A
   }
   ```
 
-### Delete Todo by ID
+  ### Delete Todo by ID
 
 - **URL:** `/v1/api/todo/delete/:id`
 - **Method:** `DELETE`
@@ -232,13 +239,6 @@ _Sử dụng Postman hoặc phần mềm chức năng tương tự để gọi A
   }
   ```
   - **Error Response example**
-  ```json
-  {
-    "status": "error",
-    "status": 404,
-    "message": "Todo not found"
-  }
-  ```
   ```json
   {
     "status": "error",
