@@ -165,7 +165,7 @@ _Sử dụng Postman hoặc phần mềm chức năng tương tự để gọi A
   }
   ```
 
-  - **Error Response example**
+- **Error Response example**
 
   ```json
   {
@@ -206,7 +206,7 @@ _Sử dụng Postman hoặc phần mềm chức năng tương tự để gọi A
   }
   ```
 
-  - **Error Response example**
+- **Error Response example**
 
   ```json
   {
@@ -238,7 +238,7 @@ _Sử dụng Postman hoặc phần mềm chức năng tương tự để gọi A
     "metadata": 1
   }
   ```
-  - **Error Response example**
+- **Error Response example**
   ```json
   {
     "status": "error",
