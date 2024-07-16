@@ -22,8 +22,8 @@ class TodoService {
     return createTodo_inRepo(data);
   };
 
-  getTodos = async (): Promise<TodoModel[]> => {
-    return await findListTodos_inRepo();
+  getTodos = async (query: object): Promise<TodoModel[]> => {
+    return await findListTodos_inRepo(query);
   };
 
   getTodoById = async (id: string): Promise<TodoModel> => {

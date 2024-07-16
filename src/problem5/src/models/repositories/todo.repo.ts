@@ -6,8 +6,8 @@ const createTodo_inRepo = async (
   return await Todo.create(data);
 };
 
-const findListTodos_inRepo = async (): Promise<TodoModel[]> => {
-  return await Todo.find().lean();
+const findListTodos_inRepo = async (query: object): Promise<TodoModel[]> => {
+  return await Todo.find(query).lean();
 };
 
 const findTodoById_inRepo = async (id: string): Promise<TodoModel | null> => {

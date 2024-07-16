@@ -16,9 +16,10 @@ class TodoController {
   };
 
   getlist = async (req: Request, res: Response): Promise<void> => {
+    const qr = req.query as object;
     new OK({
       message: "Get Todo list successfully",
-      metadata: await todoService.getTodos(),
+      metadata: await todoService.getTodos(qr),
     }).send(res);
   };
 
