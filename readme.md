@@ -72,6 +72,7 @@ Server khởi chạy theo đường dẫn `http://localhost:4000`.
 
 ## Folder Structure
 
+```
 problem5/
 ├── src/
 │ ├── configs/
@@ -104,6 +105,7 @@ problem5/
 ├── .gitignore
 ├── package.json
 ├── server.ts
+```
 
 - **src/configs**:
 
