@@ -35,6 +35,7 @@ Tại thư mục gốc dự án.
 ## Nội dung
 
 - [Installation](#installation)
+- [Folder Structure](#folder-structure)
 - [Endpoints](#endpoints)
   - [Create a Todo](#create-a-todo)
   - [Get All Todos](#get-all-todos)
@@ -68,6 +69,87 @@ Cài đặt, tạo biến môi trường, khởi chạy theo các bước sau:
    ```
 
 Server khởi chạy theo đường dẫn `http://localhost:4000`.
+
+## Folder Structure
+
+problem5/
+├── src/
+│ ├── configs/
+│ │ └── config.mongodb.ts
+│ ├── controllers/
+│ │ └── todo.controller.ts
+│ ├── core/
+│ │ ├── error.response.ts
+│ │ ├── success.response.ts
+│ │ ├── httpStatusCode.ts
+│ │ ├── statusCodes.ts
+│ │ └── reasonPhrases.ts
+│ ├── db/
+│ │ └── init.mongoDB.ts
+│ ├── helpers/
+│ │ └── asyncHandler.ts
+│ ├── models/
+│ │ ├── repositories/
+│ │ │ └── todo.repo.ts
+│ │ └── todo.model.ts
+│ ├── routes/
+│ │ ├── v1/todos
+│ │ │ └── index.ts
+│ │ └── index.ts
+│ ├── services/
+│ │ └── todo.service.ts
+│ ├── app.ts
+│ └──
+├── .env
+├── .gitignore
+├── package.json
+├── server.ts
+
+- **src/configs**:
+
+  - `config.mongodb.ts`: Cấu hình kết nối MongoDB.
+
+- **src/controllers**:
+
+  - `todo.controller.ts`: Xử lý các yêu cầu HTTP và phản hồi.
+
+- **src/core**:
+
+  - `error.response.ts`: Định nghĩa cấu trúc, xử lý phản hồi lỗi.
+  - `success.response.ts`: Định nghĩa cấu trúc, xử lý phản hồi thành công.
+  - `httpStatusCode.ts`: Chứa các mã trạng thái HTTP.
+  - `statusCodes.ts`: Khai báo các mã trạng thái HTTP.
+  - `reasonPhrases.ts`: Khai báo tên cho các mã trạng thái HTTP.
+
+- **src/db**:
+
+  - `init.mongoDB.ts`: Khởi tạo kết nối MongoDB.
+
+- **src/helpers**:
+
+  - `asyncHandler.ts`: Xử lý các thao tác bất đồng bộ lỗi.
+
+- **src/models**:
+
+  - **repositories**:
+    - `todo.repo.ts`: Khai báo các phương thức tương tác với database.
+  - `todo.model.ts`: Định nghĩa Schema và Model Todo.
+
+- **src/routes**:
+
+  - **v1/todos**:
+    - `index.ts`: Route liên quan đến Todo.
+  - `index.ts`: Router chính bao gồm tất cả các route.
+
+- **src/services**:
+
+  - `todo.service.ts`: Dịch vụ logic liên quan đến Todo.
+
+- **src/app.ts**: Cấu hình và khởi tạo Express.
+
+- **src/server.ts**: Khởi chạy server.
+
+- **.env**: Biến môi trường cho server.
 
 ## Endpoints
 
